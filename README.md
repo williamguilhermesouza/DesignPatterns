@@ -1,5 +1,8 @@
 # DESIGN PATTERNS 
 
+![Repo-size](https://img.shields.io/github/repo-size/williamguilhermesouza/DesignPatterns)
+![Last-commit](https://img.shields.io/github/last-commit/williamguilhermesouza/DesignPatterns)
+
 This repository is meant to be a design pattern personal reference implementation, where I can study, implement, and refer
 to programming design patterns and reuse them in the future.
 
