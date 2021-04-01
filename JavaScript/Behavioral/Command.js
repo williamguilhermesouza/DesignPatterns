@@ -34,4 +34,4 @@ let shortcut = new Shortcut();
 
 button.save('Button');
 menuItem.save('MenuItem');
-Shortcut.save('Shortcut');
+shortcut.save('Shortcut');
