@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace Behavioral 
+{
+    class Behavioral
+    {
+        static void Main(string[] args)
+        {
+            State.StateWork();
+        }
+    }
+}
