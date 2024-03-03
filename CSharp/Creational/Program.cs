@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Creational
+{
+    class Creational()
+    {
+        static void Main(string[] args)
+        {
+            
+        }
+    }
+}
