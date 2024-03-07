@@ -14,6 +14,11 @@ namespace Behavioral
                 state.StateValue = 1;
                 state.StateWork();
             }
+            else if (args[0] == "COR")
+            {
+                var obj = new ChainOfResponsibility.FirstOfChainOfResponsibility(0);
+                Console.WriteLine(obj.FirstProperty);
+            }
         }
     }
 }
