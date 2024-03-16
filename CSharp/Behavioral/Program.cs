@@ -29,6 +29,18 @@ namespace Behavioral
 				menuItem.Save("MenuItem");
 				shortcut.Save("Shortcut");
 			}
+			else if(args[0] == "Iterator")
+			{
+				var el1 = new Iterator.Element(1);
+				var el2 = new Iterator.Element(1);
+				var el3 = new Iterator.Element(1);
+				var el4 = new Iterator.Element(1);
+				el1.Next = el2;
+				el2.Next = el3;
+				el3.Next = el4;
+				var listing = new Iterator.ListIterator(el1);
+				Console.WriteLine(listing.Size());
+			}
         }
     }
 }
