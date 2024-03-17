@@ -8,5 +8,21 @@ make their objects interchangeable. */
 // to getting the context and them returning the desired solution
 public class Strategy
 {
-    
+    public int Property { get; set; }
+
+    public Strategy(int context)
+    {
+        if (context == 1) firstAlgorithm();
+        else secondAlgorithm();
+    }
+
+    private void firstAlgorithm()
+    {
+        Property = 0;
+    }
+
+    private void secondAlgorithm()
+    {
+        Property = 1;
+    }
 }

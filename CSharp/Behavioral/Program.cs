@@ -62,6 +62,14 @@ namespace Behavioral
 	            observable.Observers = [new Observer.ObserverClass(), new Observer.ObserverClass(), new Observer.ObserverClass()];
 	            observable.NotifyObservers();
             }
+            else if (args[0] == "Strategy")
+            {
+	            int context = 1;
+	            var obj = new Strategy(context);
+	            Console.WriteLine(obj.Property);
+            }
+            else if(args[0] == "Template") {}
+            else if(args[0] == "Visitor") {}
         }
     }
 }
