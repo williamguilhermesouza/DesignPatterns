@@ -56,6 +56,12 @@ namespace Behavioral
 	            firstObj.State = Memento.Get();
 	            Console.WriteLine(firstObj.State);
             }
+            else if (args[0] == "Observer")
+            {
+	            var observable = new Observer.Observable();
+	            observable.Observers = [new Observer.ObserverClass(), new Observer.ObserverClass(), new Observer.ObserverClass()];
+	            observable.NotifyObservers();
+            }
         }
     }
 }
