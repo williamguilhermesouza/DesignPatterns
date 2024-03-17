@@ -48,6 +48,14 @@ namespace Behavioral
 	            Mediator.CommunicateFirstToSecond(first, second);
 	            Console.WriteLine(second.FirstProperty);
             }
+            else if (args[0] == "Memento")
+            {
+	            var firstObj = new Memento.FirstClass();
+	            Memento.Save(firstObj);
+	            firstObj.State = "999";
+	            firstObj.State = Memento.Get();
+	            Console.WriteLine(firstObj.State);
+            }
         }
     }
 }
