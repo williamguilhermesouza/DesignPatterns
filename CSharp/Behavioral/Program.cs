@@ -73,7 +73,15 @@ namespace Behavioral
 	            var firstObj = new Template.FirstClass();
 	            firstObj.FirstMethod();
             }
-            else if(args[0] == "Visitor") {}
+            else if (args[0] == "Visitor")
+            {
+	            var visitor = new Visitor.FirstClass();
+	            Visitor.ProcessFirstClass(visitor);
+            }
+            else
+            {
+	            Console.WriteLine("Invalid Pattern name!");
+            }
         }
     }
 }

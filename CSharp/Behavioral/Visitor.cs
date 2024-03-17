@@ -7,5 +7,13 @@ separate algorithms from the objects on which they operate. */
 // that process firstclass obj, and firstclass
 public class Visitor
 {
-    
+    public static void ProcessFirstClass(FirstClass obj) 
+    {
+        Console.WriteLine(obj.FirstProperty);
+    }
+
+    public class FirstClass
+    {
+        public string FirstProperty = "First Class has been called!";
+    }
 }
