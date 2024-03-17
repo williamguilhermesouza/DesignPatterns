@@ -41,6 +41,13 @@ namespace Behavioral
 				var listing = new Iterator.ListIterator(el1);
 				Console.WriteLine(listing.Size());
 			}
+            else if (args[0] == "Mediator")
+            {
+	            var first = new Mediator.FirstClass();
+	            var second = new Mediator.SecondClass();
+	            Mediator.CommunicateFirstToSecond(first, second);
+	            Console.WriteLine(second.FirstProperty);
+            }
         }
     }
 }

@@ -7,6 +7,19 @@ namespace Behavioral;
 
 // creation of two classes and their mediator
 public class Mediator
-{
-    
+{ 
+     public static void CommunicateFirstToSecond(FirstClass first, SecondClass second)
+     {
+         second.FirstProperty = first.FirstProperty;
+     }
+
+     public class FirstClass
+     {
+         public int FirstProperty = 0;
+     }
+
+     public class SecondClass
+     {
+         public int? FirstProperty;
+     }
 }
