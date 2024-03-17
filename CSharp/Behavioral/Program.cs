@@ -68,7 +68,11 @@ namespace Behavioral
 	            var obj = new Strategy(context);
 	            Console.WriteLine(obj.Property);
             }
-            else if(args[0] == "Template") {}
+            else if (args[0] == "Template")
+            {
+	            var firstObj = new Template.FirstClass();
+	            firstObj.FirstMethod();
+            }
             else if(args[0] == "Visitor") {}
         }
     }
