@@ -1,4 +1,4 @@
-namespace Behavioral;
+namespace Creational;
 
 public class Factory
 {
