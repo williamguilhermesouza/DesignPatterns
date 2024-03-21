@@ -1,4 +1,4 @@
-namespace Behavioral;
+namespace Structural;
 
 public class Facade
 {
